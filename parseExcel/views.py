@@ -6,6 +6,7 @@ from rest_framework.renderers import JSONRenderer
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Pet
 from .serializers import PetSerializer
+from .filters import PetFilter
 
 class PetListView(generics.ListAPIView):
     queryset = Pet.objects.all()
