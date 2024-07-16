@@ -14,7 +14,7 @@ class Pet(models.Model):
     gender = models.CharField(max_length=255)
     age = models.IntegerField()
     size = models.CharField(max_length=255)
-    shelter_duration = models.CharField(max_length=255)
+    shelter_duration = models.FloatField() 
     medical_conditions = models.TextField(blank=True, null=True)
     vaccines = models.TextField(blank=True, null=True)
     character = models.TextField(blank=True, null=True)
